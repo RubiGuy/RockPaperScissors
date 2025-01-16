@@ -13,15 +13,15 @@
     </header>
     <main>
         <div class="moves-buttons">
-            <button class="rock-button">Rock</button>
-            <button class="paper-button">Paper</button>
-            <button class="scissors-button">Scissors</button>
+            <button class="rock-button" onclick="playGame('rock')"><img src="src/rock-move.png"></button>
+            <button class="paper-button" onclick="playGame('paper')"><img src="src/paper-move.png"></button>
+            <button class="scissors-button" onclick="playGame('scissors')"><img src="src/scissors-move.png"></button>
         </div>
         <div>
             <p class="result"></p>
             <p class="movesElement"></p>
             <p class="score"></p>
-            <button class="reset-button">Reset Score</button>
+            <button class="reset-button" onclick="resetScore()">Reset Score</button>
         </div>
     </main>
     <script src="index.js"></script>
