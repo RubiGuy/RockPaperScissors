@@ -32,7 +32,7 @@ function playGame(move){
 
     updateScoreElementAndLocal()
 
-    movesElement.innerHTML = `You <img src="src/${move}-move.png" class="move-image"> | <img src="src/${computerMove}-move.png" class="computerMove-image"> Computer`;
+    movesElement.innerHTML = `You <img src="src/${move}-move.png" class="move-image"> | <img src="src/${computerMove}-move.png" class="move-image"> Computer`;
 
 
 }

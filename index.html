@@ -10,13 +10,13 @@
 <body>
     <header>
         <h1 class="title">RockPaperScissors Game</h1>
-        <h2 class="subtitle">Select your move</h2>
+        <p class="subtitle">Select your move</p>
     </header>
     <main>
         <div class="moves-buttons">
-            <button class="rock-button" onclick="playGame('rock')"><img src="src/rock-move.png"></button>
-            <button class="paper-button" onclick="playGame('paper')"><img src="src/paper-move.png"></button>
-            <button class="scissors-button" onclick="playGame('scissors')"><img src="src/scissors-move.png"></button>
+            <button id="buttonMove" class="rock-button" onclick="playGame('rock')"><img src="src/rock-move.png" class="move-image"></button>
+            <button id="buttonMove" class="paper-button" onclick="playGame('paper')"><img src="src/paper-move.png" class="move-image"></button>
+            <button id="buttonMove" class="scissors-button" onclick="playGame('scissors')"><img src="src/scissors-move.png" class="move-image"></button>
         </div>
         <div>
             <p class="result"></p>

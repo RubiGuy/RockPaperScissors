@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2", serif;
+    background-color: rgb(21, 22, 22);
+    color:aliceblue;
+}  
+
+.title{
+    margin: 0;
+}
+.subtitle{
+    font-style: italic;
+}
+
+header{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.moves-buttons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.move-image{
+    height: 5rem;
+}
+
+#buttonMove{
+    background-color: transparent;
+    border-radius: 2rem;
+    border-color: aliceblue;
+    border-style: solid;
+}
