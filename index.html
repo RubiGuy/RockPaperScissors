@@ -18,11 +18,15 @@
             <button id="buttonMove" class="paper-button" onclick="playGame('paper')"><img src="src/paper-move.png" class="move-image"></button>
             <button id="buttonMove" class="scissors-button" onclick="playGame('scissors')"><img src="src/scissors-move.png" class="move-image"></button>
         </div>
-        <div>
+        <div class="footer">
             <p class="result"></p>
             <p class="movesElement"></p>
-            <p class="score"></p>
-            <button class="reset-button" onclick="resetScore()">Reset Score</button>
+            <div class="score">
+                <p class="wins"></p>
+                <p class="losses"></p>
+                <p class="ties"></p>
+            </div>
+            <button class="resetButton" onclick="resetScore()">Reset Score</button>
         </div>
     </main>
     <script src="index.js"></script>

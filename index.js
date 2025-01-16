@@ -32,21 +32,32 @@ function playGame(move){
 
     updateScoreElementAndLocal()
 
-    movesElement.innerHTML = `You <img src="src/${move}-move.png" class="move-image"> | <img src="src/${computerMove}-move.png" class="move-image"> Computer`;
+    movesElement.innerHTML = `You <img src="src/${move}-move.png" class="move-image"> <div class="vLine"></div> <img src="src/${computerMove}-move.png" class="move-image"> Bot`;
 
 
 }
 
 function resetScore()
 {
+    const movesElement = document.querySelector('.movesElement');
+    const result = document.querySelector('.result');
     score.wins = 0; score.losses = 0; score.ties = 0;
+    movesElement.innerHTML = '';
+    result.innerHTML = '';
     updateScoreElementAndLocal();
 }
 
 function updateScoreElementAndLocal()
 {
-    const scoreElement = document.querySelector('.score');
-    scoreElement.innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
+    const winsElement = document.querySelector('.wins');
+    winsElement.innerHTML = `Wins: ${score.wins}`;
+
+    const lossesElement = document.querySelector('.losses');
+    lossesElement.innerHTML = `Losses: ${score.losses}`;
+
+    const tiesElement = document.querySelector('.ties');
+    tiesElement.innerHTML = `Ties: ${score.ties}`;
+
     localStorage.setItem('score', JSON.stringify(score));
 }
 

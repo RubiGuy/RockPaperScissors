@@ -13,6 +13,7 @@ body{
 }
 .subtitle{
     font-style: italic;
+    color:aqua;
 }
 
 header{
@@ -24,7 +25,7 @@ header{
 .moves-buttons{
     display: flex;
     justify-content: space-evenly;
-
+    margin-bottom: 1rem;
 }
 
 
@@ -37,4 +38,68 @@ header{
     border-radius: 2rem;
     border-color: aliceblue;
     border-style: solid;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.result{
+    padding: 1rem;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.movesElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.vLine{
+    border-left: 0.2rem solid rgb(255, 255, 255);
+    height: 7rem;
+}
+
+.score{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    justify-content: space-evenly;
+}
+
+.wins{
+    color: rgb(0, 255, 0);
+}
+
+.losses{
+    color: red;
+}
+
+.ties{
+    color:yellow;
+}
+
+.resetButton{
+    width: 6rem;
+    height: 2rem;
+    align-self: center;
+    font-family: "Exo 2", serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.resetButton:active{
+    background-color: rgb(6, 145, 145);
 }
